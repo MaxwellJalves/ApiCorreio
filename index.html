@@ -1,0 +1,69 @@
+﻿<!DOCTYPE  html>
+<html>
+    <head> 
+        <meta charset="utf-8"> 
+        <meta http-equiv=" X-UA-Compatible" content="IE-edge">
+        <title>Busca CEP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/validador.js" type="text/javascript"></script>
+        <script src="js/regras.js" type="text/javascript"></script> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+    </head>
+    <body>
+            <nav class="navbar navbar-light bg-dark">
+                <a class="navbar-brand" style="color: rgb(32, 247, 3);"> Java Script/ Ajax - Maxwell.Costa</a>
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" id="cep" type="search" placeholder="Informe o CEP" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" onclick="consultaCep()" type="button">Pesquisar</button>
+                  <button class="btn btn-outline-info my-2 my-sm-0" onclick="limparTela()" type="button">LimparConsulta</button>
+                </form>
+              </nav>
+    
+        </hr>
+          
+        </div>
+        <div class="container">
+            <div class="row">
+    
+teste
+                <table class="table" style="margin-top: 100px;">
+                    <tbody>
+                         <tr> 
+                              <td><label><bold>Rua : </bold></label></td>
+                              <td id="logradouro"></td>
+                        </tr>
+                         <tr> 
+                             <td >Bairro:</td>
+                             <td id="bairro"></label></td>
+                        </tr>
+                         <tr> 
+                             <td >Cidade:</td>
+                             <td id="cidade"></td> 
+                         </tr>
+                         <tr>
+                              <td >UF :</td> 
+                              <td id="uf"></td>
+                        </tr>
+                         <tr> 
+                             <td >Código IBGE:</td>
+                             <td id="ibge"></td> 
+                        </tr>
+
+                    </tbody><br></br>
+                    </hr>
+                </table>
+
+            </div>
+        </div>
+        <div id="padrao">
+            <label>     
+            <input id='end' placeholder="Informe seu endereço" class="form-control"> 
+            </label> 
+            
+        </div>
+        <button type="button" onclick="chamaDados()" class="button btn-info"></button>
+    </body>
+</html>
